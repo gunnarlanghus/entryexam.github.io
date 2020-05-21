@@ -1,0 +1,17 @@
+
+{% block main %}
+
+    <h1>The Back of the Wheel</h1>
+    <h4>As you spin the cipher wheel into it's correct position, a message appears on the back. The Message is shown below. It may be a clue, or it
+    may not be a clue. You can choose to add it to your clue list by clicking the button below:</h4>
+    <br>
+    <br>
+    <h6>Keyword = </h6><img src="https://www.chemspider.com/ImagesHandler.ashx?id=259&w=250&h=250" alt="Image">
+    <form action="/wheelback" method="post">
+        <div class="form-group">
+            <input name="clue" type="hidden" value="yes">
+        </div>
+        <button class="btn btn-primary" type="submit">Add as Clue</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+    <h1>The Concentration Problem</h1>
+    <h4>Given the balanced chemical equation below, find K</h4>
+    <p>Note: All elements are imagined. Any resemblance to real elements is purely coincidental</p>
+    <br>
+    <h4>5S + 2P &#x21C6; D + 2F</h4>
+    <form action="/concentration" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="K" placeholder="Value of K" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Check</button>
+    </form>
+
+{% endblock %}

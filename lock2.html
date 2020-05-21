@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+    <h1>Lock 2</h1>
+    <h4>The Lock has a keypad, and is labelled "Formula". There is also a sticky note that says "Don't worry about subscripts. Just format it with the
+    subscript as normal text, like H2O or NH3."</h4>
+    <br>
+    <br>
+    <form action="/lock2" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="formula" placeholder="Formula" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Check</button>
+    </form>
+
+{% endblock %}

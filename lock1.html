@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+    <h1>Lock 1</h1>
+    <h4>The Lock has three selectors. There is a message on the lock that states that "because of the limited choices of this test, only two
+    tries are to be permitted." The selectors are all types of IMF, and you must choose which IMF is correct</h4>
+    <br>
+    <br>
+    <form action="/lock1" method="post">
+        <div class="form-group">
+            <select autofocus class="form-control" name="IMF">
+                    <option value="Momentary Dipole">Momentary Dipole</option>
+                    <option value="Dipole-Dipole">Dipole-Dipole</option>
+                    <option value="Hydrogen Bond">Hydrogen Bond</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Check</button>
+    </form>
+
+{% endblock %}

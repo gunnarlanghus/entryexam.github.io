@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <h1>Clues</h1>
+    <h4>These are the clues you currently possess</h4>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Clue</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in range(0, len)%}
+                <tr>
+                    <td>{{data[i]["clue"]}}</td>
+                    {% if {{data[i]["value"]}} == "https://www.chemspider.com/ImagesHandler.ashx?id=259&w=250&h=250" %}
+                        <td><img src="https://www.chemspider.com/ImagesHandler.ashx?id=259&w=250&h=250" alt="Image"></td>
+                    {% else %}
+                        <td>{{data[i]["value"]}}</td>
+                    {% endif %}
+                </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+
+{% endblock %}

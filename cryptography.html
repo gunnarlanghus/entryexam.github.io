@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+    <h1>The Cryptography Section</h1>
+    <h4>Unlike the other sections, this section only contains one book. It may be a clue, or it may not.
+    Click the button below to add it to your clue list</h4>
+    <br>
+    <br>
+    <img src="https://covers.openlibrary.org/b/id/7572-M.jpg" alt="Keywords, by Raymond Williams">
+    <form action="/cryptography" method="post">
+        <div class="form-group">
+            <input name="clue" type="hidden" value="yes">
+        </div>
+        <button class="btn btn-primary" type="submit">Add as Clue</button>
+    </form>
+
+{% endblock %}

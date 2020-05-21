@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="styles.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <title>Entry Exam</title>
+
+    </head>
+
+    <body>
+        <a href="/">Room Overview</a>
+
+        {%block main%}
+        {%endblock%}
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="/wheel">Cipher Wheel (Ignore inside letters)</a>
+
+        <form action="/clues" method="post">
+            <div class="form-group">
+                <input name="check" type="hidden" value="yes">
+            </div>
+            <button class="btn btn-outline-primary" type="submit">Check clues</button>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+    <h1>The Paper with Blanks</h1>
+    <h4>The numbers read as following:</h4>
+    <br>
+    <h4>19 13 1 25 20 18 23 19  &#8199; 1 25 13 3 12 16 20 25 13 10 23</h4>
+    <form action="/blanks" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="deciphered" placeholder="Message in Letters" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Check</button>
+    </form>
+
+{% endblock %}
